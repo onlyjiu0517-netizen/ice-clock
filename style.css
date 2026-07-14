@@ -76,8 +76,12 @@ body {
 }
 
 .digit span {
+    .digit span {
     position: relative;
     z-index: 2;
+
+    text-shadow:
+        0 0 10px rgba(180, 240, 255, 0.8);
 }
 
 .water {
