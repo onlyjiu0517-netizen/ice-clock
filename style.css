@@ -1,7 +1,7 @@
-/* =========================
+/* ========================================
    ice-clock
-   Base Style
-========================= */
+   Base
+======================================== */
 
 * {
     margin: 0;
@@ -20,11 +20,15 @@ body {
     justify-content: center;
     align-items: center;
 
-    background: transparent;
     overflow: hidden;
+    background: transparent;
 
     font-family: "Segoe UI", sans-serif;
 }
+
+/* ========================================
+   Clock
+======================================== */
 
 #clock {
     display: flex;
@@ -33,7 +37,7 @@ body {
 
     font-size: 120px;
     font-weight: bold;
-    color: #bfefff;
+    color: #dff8ff;
 
     user-select: none;
 }
@@ -42,29 +46,9 @@ body {
     opacity: 0.9;
 }
 
-
-/* =========================
-   Ice Number
-========================= */
-
-#clock span {
-    position: relative;
-    display: inline-block;
-
-    color: rgba(240, 252, 255, 0.75);
-
-    text-shadow:
-        0 0 10px rgba(180, 235, 255, 0.9),
-        0 0 25px rgba(120, 210, 255, 0.4);
-
-    -webkit-text-stroke: 2px rgba(255,255,255,0.7);
-}
-
-
-
-/* =========================
-   Digit Container
-========================= */
+/* ========================================
+   Digit
+======================================== */
 
 .digit {
     position: relative;
@@ -79,139 +63,11 @@ body {
     position: relative;
     z-index: 2;
 
+    color: rgba(235, 250, 255, 0.9);
+
     text-shadow:
-        0 0 10px rgba(180, 240, 255, 0.8);
+        0 0 8px rgba(180, 235, 255, 0.8),
+        0 0 18px rgba(120, 210, 255, 0.35);
+
+    -webkit-text-stroke: 1px rgba(255,255,255,0.6);
 }
-
-.water {
-    position: absolute;
-
-    left: 0;
-    bottom: 0;
-
-    width: 100%;
-    height: 0%;
-
-
-    z-index: 1;
-
-    transition: height 0.8s ease;
-}
-
-
-/* =========================
-   Water Base
-========================= */
-
-.digit {
-    position: relative;
-    overflow: hidden;
-}
-
-.water {
-    position: absolute;
-
-    left: 0;
-    bottom: 0;
-
-    width: 100%;
-    height: 35%;
-
-    
-
-    z-index: 1;
-}
-
-.digit span {
-    position: relative;
-    z-index: 2;
-}
-
-
-
-/* =========================
-   SVG Water
-========================= */
-
-.water {
-    position: absolute;
-
-    left: 0;
-    bottom: 0;
-
-    width: 100%;
-    height: 35%;
-
-    overflow: hidden;
-
-    z-index: 1;
-}
-
-.water-svg {
-    position: absolute;
-
-    left: 0;
-    bottom: 0;
-
-    width: 100%;
-    height: 100%;
-}
-
-.water-wave {
-    fill: rgba(80, 200, 255, 0.75);
-}
-
-
-
-/* =========================
-   SVG Debug Water
-========================= */
-
-
-.water-svg {
-    display: block;
-
-    width: 100%;
-    height: 100%;
-}
-
-.water-wave {
-    fill: #70d9ff;
-}
-
-
-
-.water {
-    position: absolute;
-
-    left: 0;
-    bottom: 0;
-
-    width: 100%;
-    height: 70%;
-
-    overflow: hidden;
-
-    background: transparent;
-
-    z-index: 1;
-}
-
-.water-svg {
-    display: block;
-
-    width: 100%;
-    height: 100%;
-}
-
-.water-wave {
-    fill: #70d9ff;
-}
-
-
-
-.digit span {
-    text-shadow:
-        0 0 8px rgba(180, 240, 255, 0.9),
-        0 0 18px rgba(80, 200, 255, 0.5);
-}   
