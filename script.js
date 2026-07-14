@@ -14,6 +14,13 @@ function updateClock() {
 
     hourElement.textContent = hour;
     minuteElement.textContent = minute;
+
+
+    const waterLevel = Number(minute);
+
+document.querySelectorAll(".water").forEach(water => {
+    water.style.height = waterLevel + "%";
+});
 }
 
 // 最初に表示
