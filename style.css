@@ -138,3 +138,32 @@ body {
     position: relative;
     z-index: 2;
 }
+
+
+
+/* =========================
+   SVG Water
+========================= */
+
+.water {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 35%;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+.water-svg {
+    width: 100%;
+    height: 100%;
+}
+
+.water-wave {
+    fill: rgba(80, 200, 255, 0.55);
+}
