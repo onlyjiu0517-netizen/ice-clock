@@ -90,6 +90,8 @@ body {
     overflow: hidden;
 
     z-index: 1;
+
+    opacity: 0.85;
 }
 
 .water-svg {
