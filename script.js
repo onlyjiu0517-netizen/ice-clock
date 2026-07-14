@@ -23,7 +23,15 @@ function updateClock() {
 updateClock();
 
 document.querySelectorAll(".water-wave").forEach(wave => {
-    wave.style.fill = "red";
+    wave.setAttribute(
+        "d",
+        `
+        M0,20
+        Q25,10 50,20
+        T100,20
+        V100 H0 Z
+        `
+    );
 });
 
 setInterval(updateClock, 1000);
