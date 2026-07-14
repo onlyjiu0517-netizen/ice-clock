@@ -41,3 +41,21 @@ body {
 .colon {
     opacity: 0.9;
 }
+
+
+/* =========================
+   Ice Number
+========================= */
+
+#clock span {
+    position: relative;
+    display: inline-block;
+
+    color: rgba(220, 248, 255, 0.95);
+
+    text-shadow:
+        0 0 8px rgba(180, 235, 255, 0.8),
+        0 0 18px rgba(120, 210, 255, 0.35);
+
+    -webkit-text-stroke: 2px rgba(255,255,255,0.45);
+}
