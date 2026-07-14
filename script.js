@@ -14,20 +14,8 @@ function updateClock() {
 
     hourElement.textContent = hour;
     minuteElement.textContent = minute;
-
-
-    const seconds = now.getSeconds();
-
-    const waterLevel = seconds * 5;
-
-    document.querySelectorAll(".water").forEach(water => {
-        water.style.height = waterLevel + "%";
-    });
-}
 }
 
-// 最初に表示
 updateClock();
 
-// 1秒ごとに更新
 setInterval(updateClock, 1000);
