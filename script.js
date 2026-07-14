@@ -7,6 +7,7 @@ const hourElement = document.getElementById("hour");
 const minuteElement = document.getElementById("minute");
 
 function updateClock() {
+
     const now = new Date();
 
     const hour = String(now.getHours()).padStart(2, "0");
@@ -15,10 +16,15 @@ function updateClock() {
     hourElement.textContent = hour;
     minuteElement.textContent = minute;
 
+
+    // =========================
+    // Water Level
+    // =========================
+
     const seconds = now.getSeconds();
 
-
     const waterHeight = 70 - (seconds / 59) * 50;
+
 
     document.querySelectorAll(".water-wave").forEach(wave => {
 
@@ -38,14 +44,10 @@ function updateClock() {
 
 }
 
-}
 
+// 最初に表示
 updateClock();
 
-const seconds = now.getSeconds();
 
-const waterHeight = 70 - (seconds / 59) * 50;
-
-
-
+// 1秒ごとに更新
 setInterval(updateClock, 1000);
