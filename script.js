@@ -18,7 +18,7 @@ function updateClock() {
 
     const seconds = now.getSeconds();
 
-    const waterLevel = (seconds / 59) * 100;
+    const waterLevel = seconds * 5;
 
     document.querySelectorAll(".water").forEach(water => {
         water.style.height = waterLevel + "%";
