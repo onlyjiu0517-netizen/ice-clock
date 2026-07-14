@@ -78,6 +78,10 @@ body {
 .digit span {
     position: relative;
     z-index: 2;
+
+color: transparent;
+-webkit-text-stroke: 2px #bfefff;
+   
 }
 
 .water {
