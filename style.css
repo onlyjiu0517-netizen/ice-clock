@@ -172,3 +172,33 @@ body {
 .water-wave {
     fill: rgba(80, 200, 255, 0.75);
 }
+
+
+
+/* =========================
+   SVG Debug Water
+========================= */
+
+.water {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    width: 100%;
+    height: 50%;
+
+    overflow: hidden;
+
+    z-index: 1;
+}
+
+.water-svg {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+}
+
+.water-wave {
+    fill: #70d9ff;
+}
