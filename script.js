@@ -18,20 +18,34 @@ function updateClock() {
     const seconds = now.getSeconds();
 
 
+    const waterHeight = 70 - (seconds / 59) * 50;
+
+    document.querySelectorAll(".water-wave").forEach(wave => {
+
+        const h = waterHeight;
+
+        wave.setAttribute(
+            "d",
+            `
+            M0,${h}
+            Q25,${h - 10} 50,${h}
+            T100,${h}
+            V100 H0 Z
+            `
+        );
+
+    });
+
+}
+
 }
 
 updateClock();
 
-document.querySelectorAll(".water-wave").forEach(wave => {
-    wave.setAttribute(
-        "d",
-        `
-        M0,20
-        Q25,10 50,20
-        T100,20
-        V100 H0 Z
-        `
-    );
-});
+const seconds = now.getSeconds();
+
+const waterHeight = 70 - (seconds / 59) * 50;
+
+
 
 setInterval(updateClock, 1000);
