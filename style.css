@@ -208,3 +208,11 @@ body {
 .water-wave {
     fill: #70d9ff;
 }
+
+
+
+.digit span {
+    text-shadow:
+        0 0 8px rgba(180, 240, 255, 0.9),
+        0 0 18px rgba(80, 200, 255, 0.5);
+}   
