@@ -102,3 +102,26 @@ body {
 
     display: block;
 }
+
+
+/* ========================================
+   Water Animation
+======================================== */
+
+@keyframes waveMove {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-8%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.water-svg {
+    animation: waveMove 3s ease-in-out infinite;
+}
