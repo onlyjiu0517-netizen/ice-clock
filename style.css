@@ -93,7 +93,7 @@ body {
 
     opacity: 0.85;
 
-   
+   mask-image: linear-gradient(to top, black 50%, transparent 50%);
 }
 
 
