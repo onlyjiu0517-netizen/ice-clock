@@ -14,6 +14,14 @@ function updateClock() {
 
     hourElement.textContent = hour;
     minuteElement.textContent = minute;
+
+    const seconds = now.getSeconds();
+
+const wavePosition = 100 - (seconds / 59) * 100;
+
+document.querySelectorAll(".water-svg").forEach(wave => {
+    wave.style.transform = `translateY(${wavePosition}%)`;
+});
 }
 
 updateClock();
