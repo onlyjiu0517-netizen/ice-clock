@@ -117,5 +117,7 @@ body {
 .water-wave {
     fill: rgba(80, 200, 255, 0.75);
 
-   transform: translateY(-20%);
+   .water-wave {
+    fill: rgba(80, 200, 255, 0.75);
+}
 }
