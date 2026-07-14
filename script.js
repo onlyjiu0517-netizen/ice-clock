@@ -17,7 +17,7 @@ function updateClock() {
 
     const seconds = now.getSeconds();
 
-const wavePosition = 100 - (seconds / 59) * 100;
+const wavePosition = 50 - (seconds / 59) * 150;
 
 document.querySelectorAll(".water-svg").forEach(wave => {
     wave.style.transform = `translateY(${wavePosition}%)`;
