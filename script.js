@@ -22,4 +22,8 @@ function updateClock() {
 
 updateClock();
 
+document.querySelectorAll(".water-wave").forEach(wave => {
+    wave.style.fill = "red";
+});
+
 setInterval(updateClock, 1000);
