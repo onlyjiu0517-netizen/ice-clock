@@ -108,7 +108,7 @@ body {
     display: block;
 
        transform: translateY(0%);
-    transition: transform 0.8s ease;
+    transition: none;
 }
 
 
