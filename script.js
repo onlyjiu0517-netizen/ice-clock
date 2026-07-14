@@ -6,6 +6,9 @@
 const hourElement = document.getElementById("hour");
 const minuteElement = document.getElementById("minute");
 
+let currentWaterHeight = 70;
+let targetWaterHeight = 70;
+
 function updateClock() {
 
     const now = new Date();
@@ -23,7 +26,7 @@ function updateClock() {
 
     const seconds = now.getSeconds();
 
-    const waterHeight = 70 - (seconds / 59) * 50;
+    targetWaterHeight = 70 - (seconds / 59) * 50;
 
 
     document.querySelectorAll(".water-wave").forEach(wave => {
