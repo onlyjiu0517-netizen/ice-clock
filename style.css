@@ -120,20 +120,6 @@ body {
     z-index: 1;
 }
 
-.wave {
-    position: absolute;
-
-    top: -8px;
-    left: 0;
-
-    width: 200%;
-    height: 16px;
-
-    background: rgba(180, 240, 255, 0.8);
-
-    border-radius: 50%;
-}
-
 .digit span {
     position: relative;
     z-index: 2;
