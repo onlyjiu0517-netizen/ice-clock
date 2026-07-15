@@ -94,6 +94,8 @@ body {
 
     opacity: 0.85;
 
+   clip-path: inset(0);
+
   
 }
 
