@@ -19,9 +19,7 @@ function updateClock() {
     hourElement.textContent = hour;
     minuteElement.textContent = minute;
 
-    document.getElementById("hourTens").textContent = hour[0];
-document.getElementById("hourOnes").textContent = hour[1];
-
+    document.getElementById("hourMaskText").textContent = hour;
 
     // =========================
     // Water Level
