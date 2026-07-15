@@ -123,3 +123,8 @@ body {
     fill: rgba(80, 200, 255, 0.75);
 }
 }
+
+
+.mask-number {
+    display: none !important;
+}
