@@ -6,8 +6,8 @@
 const hourElement = document.getElementById("hour");
 const minuteElement = document.getElementById("minute");
 
-let currentWaterHeight = 70;
-let targetWaterHeight = 70;
+let currentWaterHeight = 100;
+let targetWaterHeight = 100;
 
 function updateClock() {
 
@@ -26,7 +26,7 @@ function updateClock() {
 
     const seconds = now.getSeconds();
 
-    targetWaterHeight = 70 - (seconds / 59) * 50;
+    targetWaterHeight = 100 - (seconds / 59) * 80;
     
 
 }
