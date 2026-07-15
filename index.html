@@ -13,40 +13,25 @@
 
     <div class="digit">
 
-    <span id="hour">00</span>
-        
+    <div class="digit">
 
-    <div class="water">
+<span id="hour">00</span>
 
-        <svg class="water-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
+<span id="hourWater" class="water-text">00</span>
 
-        <mask id="digitMask">
+<div class="water">
+<svg class="water-svg" viewBox="0 0 100 100" preserveAspectRatio="none">
 
-<text
-id="hourMaskText"
-x="50"
-y="82"
-text-anchor="middle"
-font-size="77"
-font-family="Segoe UI"
-letter-spacing="0.5"
-fill="white">
-12
-</text>
-
-</mask>
-            
 <path
-    class="water-wave"
-    mask="url(#digitMask)"
-    d="M0,50
-       Q25,40 50,50
-       T100,50
-       V100 H0 Z">
+class="water-wave"
+d="M0,50
+   Q25,40 50,50
+   T100,50
+   V100 H0 Z">
 </path>
-        </svg>
 
-    </div>
+</svg>
+</div>
 
 </div>
 
