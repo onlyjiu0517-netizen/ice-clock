@@ -28,7 +28,7 @@ function updateClock() {
 
     const seconds = now.getSeconds();
 
-    targetWaterHeight = 100 - (seconds / 59) * 80;
+    targetWaterHeight = 0;
     
 
 }
