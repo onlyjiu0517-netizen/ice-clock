@@ -64,7 +64,7 @@ body {
     position: relative;
     z-index: 2;
 
-    color: rgba(245, 252, 255, 0.15);
+    color: rgba(245, 252, 255, 0.08);
 
     text-shadow:
         0 0 6px rgba(255, 255, 255, 0.9),
@@ -117,7 +117,7 @@ body {
 
 
 .water-wave {
-    fill: rgba(80, 200, 255, 0.45);
+    fill: rgba(80, 200, 255, 0.35);
 
   
 }
