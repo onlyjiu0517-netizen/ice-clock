@@ -40,14 +40,14 @@ function animateWater() {
     document.querySelectorAll(".water-wave").forEach(wave => {
 
         const h = currentWaterHeight;
-const wave = Math.sin(Date.now() / 300) * 3;
+const waveOffset = Math.sin(Date.now() / 300) * 3;
 
         wave.setAttribute(
             "d",
             `
             M0,${h}
-Q25,${h - 10 + wave} 50,${h}
-T100,${h + wave}
+Q25,${h - 10 + waveOffset} 50,${h}
+T100,${h + waveOffset}
 V100 H0 Z
             `
         );
