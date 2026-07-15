@@ -27,11 +27,39 @@ function updateClock() {
     const seconds = now.getSeconds();
 
     targetWaterHeight = 70 - (seconds / 59) * 50;
-
-
     
 
 }
+
+function animateWater() {
+
+    currentWaterHeight +=
+        (targetWaterHeight - currentWaterHeight) * 0.05;
+
+
+    document.querySelectorAll(".water-wave").forEach(wave => {
+
+        const h = currentWaterHeight;
+
+        wave.setAttribute(
+            "d",
+            `
+            M0,${h}
+            Q25,${h - 10} 50,${h}
+            T100,${h}
+            V100 H0 Z
+            `
+        );
+
+    });
+
+
+    requestAnimationFrame(animateWater);
+
+}
+
+
+animateWater();
 
 
 // 最初に表示
