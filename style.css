@@ -64,6 +64,10 @@ body {
     position: relative;
     z-index: 2;
 
+   
+    font-family: "Segoe UI", sans-serif;
+
+
     color: rgba(245, 252, 255, 0.08);
 
     text-shadow:
