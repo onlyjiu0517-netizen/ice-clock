@@ -64,7 +64,7 @@ body {
     position: relative;
     z-index: 2;
 
-    color: rgba(245, 252, 255, 0.92);
+    color: rgba(245, 252, 255, 0.15);
 
     text-shadow:
         0 0 6px rgba(255, 255, 255, 0.9),
