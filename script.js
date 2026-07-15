@@ -31,7 +31,7 @@ function updateClock() {
 
     document.querySelectorAll(".water-wave").forEach(wave => {
 
-        const h = waterHeight;
+        const h = targetWaterHeight;
 
         wave.setAttribute(
             "d",
