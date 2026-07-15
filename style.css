@@ -128,15 +128,5 @@ body {
 
 
 .mask-number {
-    position: absolute;
-    inset: 0;
-
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-
-    color: white;
-    z-index: 0;
-
-    opacity: 0;
+    display: none !important;
 }
